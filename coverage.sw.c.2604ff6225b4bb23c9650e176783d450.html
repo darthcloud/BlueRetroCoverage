@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2025-05-08 23:03:06</td>
+      <td>2025-05-09 00:02:53</td>
     </tr>
   </table>
 </div>
@@ -73,7 +73,7 @@
       <th>Condition coverage</th>
       <th>Block coverage</th>
     </tr>
-    <tr><td><a href="#l85">bt_hid_cmd_sw_set_conf (line 85)</a></td><td>called 111 times</td><td>100.0%</td><td>100.0%</td><td>-%</td><td>100.0%</td></tr>
+    <tr><td><a href="#l85">bt_hid_cmd_sw_set_conf (line 85)</a></td><td>called 112 times</td><td>100.0%</td><td>100.0%</td><td>-%</td><td>100.0%</td></tr>
     <tr><td><a href="#l113">bt_hid_sw_exec_next_state (line 113)</a></td><td>called 71 times</td><td>57.1%</td><td>50.0%</td><td>-%</td><td>60.0%</td></tr>
     <tr><td><a href="#l104">bt_hid_sw_get_calib (line 104)</a></td><td>called 42 times</td><td>100.0%</td><td>75.0%</td><td>-%</td><td>100.0%</td></tr>
     <tr><td><a href="#l261">bt_hid_sw_hdlr (line 261)</a></td><td>called 784 times</td><td>62.9%</td><td>70.7%</td><td>-%</td><td>61.5%</td></tr>
@@ -686,28 +686,28 @@
       <td class="lineno"><a id="l85" href="#l85">85</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">112</td>
       <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">bt_hid_cmd_sw_set_conf</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_dev</span><span class="w"> </span><span class="o">*</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">report</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l86" href="#l86">86</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">112</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_sw_conf</span><span class="w"> </span><span class="o">*</span><span class="n">sw_conf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_sw_conf</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_pkt_tmp</span><span class="p">.</span><span class="n">hidp_data</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l87" href="#l87">87</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">112</td>
       <td class="src coveredLine"><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BT_HIDP_SW_SET_CONF</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l88" href="#l88">88</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">112</td>
       <td class="src coveredLine"><span class="w">    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_sw_conf</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
@@ -721,21 +721,21 @@
       <td class="lineno"><a id="l90" href="#l90">90</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">112</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">memcpy</span><span class="p">((</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">sw_conf</span><span class="p">,</span><span class="w"> </span><span class="n">report</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="o">*</span><span class="n">sw_conf</span><span class="p">));</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l91" href="#l91">91</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">112</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">sw_conf</span><span class="o">-&gt;</span><span class="n">tid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">tid</span><span class="o">++</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l92" href="#l92">92</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">112</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">sw_conf</span><span class="o">-&gt;</span><span class="n">tid</span><span class="w"> </span><span class="o">&amp;=</span><span class="w"> </span><span class="mh">0xF</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -765,26 +765,26 @@
         <details class="linebranchDetails">
           <summary class="linebranchSummary">2/2</summary>
           <div class="linebranchContents">
-            <div class="takenBranch">&check; Branch 0 (3&rightarrow;4) taken 10 times.</div>
+            <div class="takenBranch">&check; Branch 0 (3&rightarrow;4) taken 11 times.</div>
             <div class="takenBranch">&check; Branch 1 (3&rightarrow;5) taken 101 times.</div>
           </div>
         </details>
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">112</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(((</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">report</span><span class="p">)[</span><span class="mi">127</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">FB_TYPE_RUMBLE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l97" href="#l97">97</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">10</td>
+      <td class="linecount coveredLine">11</td>
       <td class="src coveredLine"><span class="w">        </span><span class="n">protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BT_HIDP_SW_SET_RUMBLE</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l98" href="#l98">98</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">10</td>
+      <td class="linecount coveredLine">11</td>
       <td class="src coveredLine"><span class="w">        </span><span class="n">len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_sw_rumble</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
@@ -805,14 +805,14 @@
       <td class="lineno"><a id="l101" href="#l101">101</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">112</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">bt_hid_cmd</span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">acl_handle</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">intr_chan</span><span class="p">.</span><span class="n">dcid</span><span class="p">,</span><span class="w"> </span><span class="n">BT_HIDP_DATA_OUT</span><span class="p">,</span><span class="w"> </span><span class="n">protocol</span><span class="p">,</span><span class="w"> </span><span class="n">len</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l102" href="#l102">102</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">112</td>
       <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
@@ -907,8 +907,8 @@
         <details class="linebranchDetails">
           <summary class="linebranchSummary">2/4</summary>
           <div class="linebranchContents">
-            <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 47 times.</div>
-            <div class="takenBranch">&check; Branch 1 (2&rightarrow;5) taken 24 times.</div>
+            <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 48 times.</div>
+            <div class="takenBranch">&check; Branch 1 (2&rightarrow;5) taken 23 times.</div>
             <div class="notTakenBranch">&cross; Branch 2 (2&rightarrow;7) not taken.</div>
             <div class="notTakenBranch">&cross; Branch 3 (2&rightarrow;9) not taken.</div>
           </div>
@@ -921,7 +921,7 @@
       <td class="lineno"><a id="l115" href="#l115">115</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">47</td>
+      <td class="linecount coveredLine">48</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">SW_INIT_STATE_READ_INFO</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
@@ -935,7 +935,7 @@
       <td class="lineno"><a id="l117" href="#l117">117</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">47</td>
+      <td class="linecount coveredLine">48</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_sw_conf</span><span class="w"> </span><span class="n">sw_conf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -970,21 +970,21 @@
       <td class="lineno"><a id="l122" href="#l122">122</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">47</td>
+      <td class="linecount coveredLine">48</td>
       <td class="src coveredLine"><span class="w">            </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">tid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l123" href="#l123">123</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">47</td>
+      <td class="linecount coveredLine">48</td>
       <td class="src coveredLine"><span class="w">            </span><span class="n">bt_hid_cmd_sw_set_conf</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">sw_conf</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l124" href="#l124">124</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">47</td>
+      <td class="linecount coveredLine">48</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -1068,7 +1068,7 @@
       <td class="lineno"><a id="l136" href="#l136">136</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">24</td>
+      <td class="linecount coveredLine">23</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">SW_INIT_STATE_READ_CALIB</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
@@ -1082,7 +1082,7 @@
       <td class="lineno"><a id="l138" href="#l138">138</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">24</td>
+      <td class="linecount coveredLine">23</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_sw_conf</span><span class="w"> </span><span class="n">sw_conf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -1117,14 +1117,14 @@
       <td class="lineno"><a id="l143" href="#l143">143</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">24</td>
+      <td class="linecount coveredLine">23</td>
       <td class="src coveredLine"><span class="w">            </span><span class="n">bt_hid_cmd_sw_set_conf</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">sw_conf</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l144" href="#l144">144</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">24</td>
+      <td class="linecount coveredLine">23</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
