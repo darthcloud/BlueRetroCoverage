@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2025-05-18 16:01:01</td>
+      <td>2025-05-19 15:17:36</td>
     </tr>
   </table>
 </div>
@@ -40,21 +40,21 @@
     </tr>
     <tr>
       <th scope="row">Lines:</th>
-      <td>8</td>
+      <td>0</td>
       <td>357</td>
-      <td class="coverage-low">2.2%</td>
+      <td class="coverage-none">0.0%</td>
     </tr>
     <tr>
       <th scope="row">Functions:</th>
-      <td>2</td>
+      <td>0</td>
       <td>30</td>
-      <td class="coverage-low">6.7%</td>
+      <td class="coverage-none">0.0%</td>
     </tr>
     <tr>
       <th scope="row">Branches:</th>
-      <td>4</td>
+      <td>0</td>
       <td>151</td>
-      <td class="coverage-low">2.6%</td>
+      <td class="coverage-none">0.0%</td>
     </tr>
   </table>
 </div>
@@ -73,7 +73,7 @@
       <th>Condition coverage</th>
       <th>Block coverage</th>
     </tr>
-    <tr><td><a href="#l480">bt_att_get_report_index (line 480)</a></td><td>called 1 time</td><td>75.0%</td><td>50.0%</td><td>-%</td><td>71.4%</td></tr>
+    <tr><td><a href="#l480">bt_att_get_report_index (line 480)</a></td><td>not called</td><td>0.0%</td><td>0.0%</td><td>-%</td><td>0.0%</td></tr>
     <tr><td><a href="#l364">bt_att_hid_continue_report_cfg (line 364)</a></td><td>not called</td><td>0.0%</td><td>0.0%</td><td>-%</td><td>0.0%</td></tr>
     <tr><td><a href="#l514">bt_att_hid_hdlr (line 514)</a></td><td>not called</td><td>0.0%</td><td>0.0%</td><td>-%</td><td>0.0%</td></tr>
     <tr><td><a href="#l489">bt_att_hid_init (line 489)</a></td><td>not called</td><td>0.0%</td><td>-%</td><td>-%</td><td>0.0%</td></tr>
@@ -102,7 +102,7 @@
     <tr><td><a href="#l380">bt_att_hid_start_report_cfg (line 380)</a></td><td>not called</td><td>0.0%</td><td>-%</td><td>-%</td><td>0.0%</td></tr>
     <tr><td><a href="#l302">bt_att_hid_start_report_map (line 302)</a></td><td>not called</td><td>0.0%</td><td>-%</td><td>-%</td><td>0.0%</td></tr>
     <tr><td><a href="#l342">bt_att_hid_start_report_ref (line 342)</a></td><td>not called</td><td>0.0%</td><td>-%</td><td>-%</td><td>0.0%</td></tr>
-    <tr><td><a href="#l495">bt_att_write_hid_report (line 495)</a></td><td>called 1 time</td><td>45.5%</td><td>16.7%</td><td>-%</td><td>33.3%</td></tr>
+    <tr><td><a href="#l495">bt_att_write_hid_report (line 495)</a></td><td>not called</td><td>0.0%</td><td>0.0%</td><td>-%</td><td>0.0%</td></tr>
   </table>
 </details>
 
@@ -3473,38 +3473,22 @@
       <td class="lineno"><a id="l480" href="#l480">480</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1</td>
-      <td class="src coveredLine"><span class="k">static</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">bt_att_get_report_index</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_hid</span><span class="w"> </span><span class="o">*</span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">report_id</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">report_type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="k">static</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">bt_att_get_report_index</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_hid</span><span class="w"> </span><span class="o">*</span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">report_id</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">report_type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l481" href="#l481">481</a></td>
       <td class="linebranch">
-        <details class="linebranchDetails">
-          <summary class="linebranchSummary">2/2</summary>
-          <div class="linebranchContents">
-            <div class="takenBranch">&check; Branch 0 (7&rightarrow;3) taken 10 times.</div>
-            <div class="takenBranch">&check; Branch 1 (7&rightarrow;8) taken 1 times.</div>
-          </div>
-        </details>
       </td>
-      <td class="linecount coveredLine">11</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">HID_MAX_REPORT</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">HID_MAX_REPORT</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l482" href="#l482">482</a></td>
       <td class="linebranch">
-        <details class="linebranchDetails">
-          <summary class="linebranchSummary">1/4</summary>
-          <div class="linebranchContents">
-            <div class="notTakenBranch">&cross; Branch 0 (3&rightarrow;4) not taken.</div>
-            <div class="takenBranch">&check; Branch 1 (3&rightarrow;6) taken 10 times.</div>
-            <div class="notTakenBranch">&cross; Branch 2 (4&rightarrow;5) not taken.</div>
-            <div class="notTakenBranch">&cross; Branch 3 (4&rightarrow;6) not taken.</div>
-          </div>
-        </details>
       </td>
-      <td class="linecount partialCoveredLine">10</td>
-      <td class="src partialCoveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hid_data</span><span class="o">-&gt;</span><span class="n">reports</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">report_id</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">hid_data</span><span class="o">-&gt;</span><span class="n">reports</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">report_type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hid_data</span><span class="o">-&gt;</span><span class="n">reports</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">report_id</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">hid_data</span><span class="o">-&gt;</span><span class="n">reports</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">report_type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l483" href="#l483">483</a></td>
@@ -3594,15 +3578,15 @@
       <td class="lineno"><a id="l495" href="#l495">495</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1</td>
-      <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">bt_att_write_hid_report</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_dev</span><span class="w"> </span><span class="o">*</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">report_id</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">len</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">bt_att_write_hid_report</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_dev</span><span class="w"> </span><span class="o">*</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">report_id</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">len</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l496" href="#l496">496</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_hid</span><span class="w"> </span><span class="o">*</span><span class="n">hid_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">att_hid</span><span class="p">[</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">ids</span><span class="p">.</span><span class="n">id</span><span class="p">];</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_hid</span><span class="w"> </span><span class="o">*</span><span class="n">hid_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">att_hid</span><span class="p">[</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">ids</span><span class="p">.</span><span class="n">id</span><span class="p">];</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l497" href="#l497">497</a></td>
@@ -3615,22 +3599,15 @@
       <td class="lineno"><a id="l498" href="#l498">498</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_att_get_report_index</span><span class="p">(</span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">report_id</span><span class="p">,</span><span class="w"> </span><span class="mh">0x02</span><span class="p">);</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_att_get_report_index</span><span class="p">(</span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">report_id</span><span class="p">,</span><span class="w"> </span><span class="mh">0x02</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l499" href="#l499">499</a></td>
       <td class="linebranch">
-        <details class="linebranchDetails">
-          <summary class="linebranchSummary">1/2</summary>
-          <div class="linebranchContents">
-            <div class="notTakenBranch">&cross; Branch 0 (2&rightarrow;3) not taken.</div>
-            <div class="takenBranch">&check; Branch 1 (2&rightarrow;7) taken 1 times.</div>
-          </div>
-        </details>
       </td>
-      <td class="linecount partialCoveredLine">1</td>
-      <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">index</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">index</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l500" href="#l500">500</a></td>
@@ -3720,8 +3697,8 @@
       <td class="lineno"><a id="l512" href="#l512">512</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1</td>
-      <td class="src coveredLine"><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l513" href="#l513">513</a></td>
