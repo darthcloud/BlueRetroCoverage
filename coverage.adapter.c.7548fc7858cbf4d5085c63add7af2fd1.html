@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2025-05-25 03:15:10</td>
+      <td>2025-05-30 01:52:51</td>
     </tr>
   </table>
 </div>
@@ -80,7 +80,7 @@
     <tr><td><a href="#l467">adapter_fb_stop_timer_stop (line 467)</a></td><td>called 27 times</td><td>100.0%</td><td>50.0%</td><td>-%</td><td>100.0%</td></tr>
     <tr><td><a href="#l234">adapter_get_out_mask (line 234)</a></td><td>not called</td><td>0.0%</td><td>-%</td><td>-%</td><td>0.0%</td></tr>
     <tr><td><a href="#l520">adapter_init (line 520)</a></td><td>called 1 time</td><td>75.0%</td><td>60.0%</td><td>-%</td><td>75.0%</td></tr>
-    <tr><td><a href="#l410">adapter_init_buffer (line 410)</a></td><td>called 196 times</td><td>100.0%</td><td>50.0%</td><td>-%</td><td>100.0%</td></tr>
+    <tr><td><a href="#l410">adapter_init_buffer (line 410)</a></td><td>called 192 times</td><td>100.0%</td><td>50.0%</td><td>-%</td><td>100.0%</td></tr>
     <tr><td><a href="#l66">adapter_map_from_axis (line 66)</a></td><td>called 8832 times</td><td>93.8%</td><td>91.7%</td><td>-%</td><td>96.0%</td></tr>
     <tr><td><a href="#l150">adapter_map_from_btn (line 150)</a></td><td>called 34664 times</td><td>100.0%</td><td>91.7%</td><td>-%</td><td>100.0%</td></tr>
     <tr><td><a href="#l194">adapter_mapping (line 194)</a></td><td>called 1330 times</td><td>100.0%</td><td>100.0%</td><td>-%</td><td>100.0%</td></tr>
@@ -3228,7 +3228,7 @@
       <td class="lineno"><a id="l410" href="#l410">410</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">196</td>
+      <td class="linecount coveredLine">192</td>
       <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="n">IRAM_ATTR</span><span class="w"> </span><span class="n">adapter_init_buffer</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">wired_id</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -3237,26 +3237,26 @@
         <details class="linebranchDetails">
           <summary class="linebranchSummary">1/2</summary>
           <div class="linebranchContents">
-            <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 196 times.</div>
+            <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 192 times.</div>
             <div class="notTakenBranch">&cross; Branch 1 (2&rightarrow;4) not taken.</div>
           </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">196</td>
+      <td class="linecount partialCoveredLine">192</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">wired_adapter</span><span class="p">.</span><span class="n">system_id</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">WIRED_AUTO</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l412" href="#l412">412</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">196</td>
+      <td class="linecount coveredLine">192</td>
       <td class="src coveredLine"><span class="w">        </span><span class="n">wired_adapter</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">wired_id</span><span class="p">].</span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">wired_id</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l413" href="#l413">413</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">196</td>
+      <td class="linecount coveredLine">192</td>
       <td class="src coveredLine"><span class="w">        </span><span class="n">wired_init_buffer</span><span class="p">(</span><span class="n">config</span><span class="p">.</span><span class="n">out_cfg</span><span class="p">[</span><span class="n">wired_id</span><span class="p">].</span><span class="n">dev_mode</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">wired_adapter</span><span class="p">.</span><span class="n">data</span><span class="p">[</span><span class="n">wired_id</span><span class="p">]);</span></td>
     </tr>
     <tr class="source-line">
@@ -3270,7 +3270,7 @@
       <td class="lineno"><a id="l415" href="#l415">415</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">196</td>
+      <td class="linecount coveredLine">192</td>
       <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
