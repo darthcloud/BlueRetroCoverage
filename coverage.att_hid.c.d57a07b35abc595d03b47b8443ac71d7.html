@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2025-05-30 01:52:51</td>
+      <td>2025-06-09 03:43:50</td>
     </tr>
   </table>
 </div>
@@ -41,7 +41,7 @@
     <tr>
       <th scope="row">Lines:</th>
       <td>0</td>
-      <td>357</td>
+      <td>364</td>
       <td class="coverage-none">0.0%</td>
     </tr>
     <tr>
@@ -53,7 +53,7 @@
     <tr>
       <th scope="row">Branches:</th>
       <td>0</td>
-      <td>151</td>
+      <td>155</td>
       <td class="coverage-none">0.0%</td>
     </tr>
   </table>
@@ -2417,14 +2417,14 @@
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">hid_parser</span><span class="p">(</span><span class="n">bt_data</span><span class="p">,</span><span class="w"> </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">sdp_data</span><span class="p">,</span><span class="w"> </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">sdp_len</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">sdp_data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l330" href="#l330">330</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">sdp_data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="n">hid_parser</span><span class="p">(</span><span class="n">bt_data</span><span class="p">,</span><span class="w"> </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">sdp_data</span><span class="p">,</span><span class="w"> </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">sdp_len</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l331" href="#l331">331</a></td>
@@ -3837,1103 +3837,1187 @@
       <td class="lineno"><a id="l532" href="#l532">532</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="n">bt_att_hid_start_first_state</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">);</span></td>
+      <td class="linecount "></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l533" href="#l533">533</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">ids</span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">BT_SW2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l534" href="#l534">534</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BT_GATT_CCC_NOTIFY</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l535" href="#l535">535</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="n">bt_att_cmd_write_req</span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">acl_handle</span><span class="p">,</span><span class="w"> </span><span class="mh">0x000b</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">data</span><span class="p">));</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l536" href="#l536">536</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_FIND_INFO_RSP</span><span class="p">:</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l537" href="#l537">537</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">{</span></td>
+      <td class="src "><span class="w">                </span><span class="k">else</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l538" href="#l538">538</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_find_info_rsp</span><span class="w"> </span><span class="o">*</span><span class="n">find_info_rsp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_find_info_rsp</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="n">bt_att_hid_start_first_state</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l539" href="#l539">539</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="w">                </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l540" href="#l540">540</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l541" href="#l541">541</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l542" href="#l542">542</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_IDENT_HID_HLDS</span><span class="p">:</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l543" href="#l543">543</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_ident_hid_hdls</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">find_info_rsp</span><span class="o">-&gt;</span><span class="n">info</span><span class="p">,</span><span class="w"> </span><span class="n">find_info_rsp</span><span class="o">-&gt;</span><span class="n">format</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_FIND_INFO_RSP</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l544" href="#l544">544</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l545" href="#l545">545</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_find_info_rsp</span><span class="w"> </span><span class="o">*</span><span class="n">find_info_rsp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_find_info_rsp</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l546" href="#l546">546</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
+      <td class="linecount "></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l547" href="#l547">547</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l548" href="#l548">548</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l549" href="#l549">549</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_IDENT_HID_HLDS</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l550" href="#l550">550</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_ident_hid_hdls</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">find_info_rsp</span><span class="o">-&gt;</span><span class="n">info</span><span class="p">,</span><span class="w"> </span><span class="n">find_info_rsp</span><span class="o">-&gt;</span><span class="n">format</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l551" href="#l551">551</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l552" href="#l552">552</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_READ_TYPE_RSP</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l553" href="#l553">553</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l554" href="#l554">554</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_type_rsp</span><span class="w"> </span><span class="o">*</span><span class="n">read_type_rsp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_type_rsp</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l555" href="#l555">555</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">rsp_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">handle</span><span class="p">);</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l556" href="#l556">556</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="w">            </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l557" href="#l557">557</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l558" href="#l558">558</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l559" href="#l559">559</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_DEVICE_NAME</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_READ_TYPE_RSP</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l560" href="#l560">560</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">hid_data</span><span class="o">-&gt;</span><span class="n">dev_name_hdl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">handle</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l561" href="#l561">561</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">rsp_len</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_type_rsp</span><span class="w"> </span><span class="o">*</span><span class="n">read_type_rsp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_type_rsp</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l562" href="#l562">562</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                            </span><span class="n">bt_att_hid_process_device_name</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">rsp_len</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">rsp_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">handle</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l563" href="#l563">563</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">                        </span><span class="p">}</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l564" href="#l564">564</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                        </span><span class="k">else</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l565" href="#l565">565</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                            </span><span class="n">bt_att_cmd_read_req</span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">acl_handle</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">handle</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l566" href="#l566">566</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                        </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_DEVICE_NAME</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l567" href="#l567">567</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">hid_data</span><span class="o">-&gt;</span><span class="n">dev_name_hdl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">handle</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l568" href="#l568">568</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_APPEARANCE</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">rsp_len</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l569" href="#l569">569</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_appearance</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">rsp_len</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">                            </span><span class="n">bt_att_hid_process_device_name</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">rsp_len</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l570" href="#l570">570</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                        </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l571" href="#l571">571</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_PNP</span><span class="p">:</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                        </span><span class="k">else</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l572" href="#l572">572</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_pnp</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">rsp_len</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">                            </span><span class="n">bt_att_cmd_read_req</span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">acl_handle</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">handle</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l573" href="#l573">573</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                        </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l574" href="#l574">574</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_CHAR_PROP</span><span class="p">:</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l575" href="#l575">575</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_char_prop</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">len</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_APPEARANCE</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l576" href="#l576">576</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_appearance</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">rsp_len</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l577" href="#l577">577</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_PPCP_CFG</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l578" href="#l578">578</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_ppcp_cfg</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">rsp_len</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_PNP</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l579" href="#l579">579</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_pnp</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">rsp_len</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l580" href="#l580">580</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_BATT_LVL</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l581" href="#l581">581</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_batt_lvl</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">rsp_len</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_CHAR_PROP</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l582" href="#l582">582</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_char_prop</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">len</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l583" href="#l583">583</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l584" href="#l584">584</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_PPCP_CFG</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l585" href="#l585">585</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_ppcp_cfg</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">rsp_len</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l586" href="#l586">586</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l587" href="#l587">587</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_BATT_LVL</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l588" href="#l588">588</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_batt_lvl</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_type_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">rsp_len</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l589" href="#l589">589</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l590" href="#l590">590</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_READ_RSP</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l591" href="#l591">591</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l592" href="#l592">592</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_rsp</span><span class="w"> </span><span class="o">*</span><span class="n">read_rsp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_rsp</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l593" href="#l593">593</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="w">                </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l594" href="#l594">594</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l595" href="#l595">595</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l596" href="#l596">596</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_DEVICE_NAME</span><span class="p">:</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l597" href="#l597">597</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_device_name</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_rsp</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_READ_RSP</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l598" href="#l598">598</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l599" href="#l599">599</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_REPORT_MAP</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_rsp</span><span class="w"> </span><span class="o">*</span><span class="n">read_rsp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_rsp</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l600" href="#l600">600</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_report_map</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_rsp</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span></td>
+      <td class="linecount "></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l601" href="#l601">601</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l602" href="#l602">602</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_REPORT_REF</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l603" href="#l603">603</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_report_ref</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_rsp</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_DEVICE_NAME</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l604" href="#l604">604</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_device_name</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_rsp</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l605" href="#l605">605</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l606" href="#l606">606</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_REPORT_MAP</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l607" href="#l607">607</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_report_map</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_rsp</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l608" href="#l608">608</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l609" href="#l609">609</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_REPORT_REF</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l610" href="#l610">610</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_report_ref</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_rsp</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l611" href="#l611">611</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l612" href="#l612">612</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_READ_BLOB_RSP</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l613" href="#l613">613</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l614" href="#l614">614</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_blob_rsp</span><span class="w"> </span><span class="o">*</span><span class="n">read_blob_rsp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_blob_rsp</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l615" href="#l615">615</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="w">                </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l616" href="#l616">616</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l617" href="#l617">617</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l618" href="#l618">618</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_DEVICE_NAME</span><span class="p">:</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l619" href="#l619">619</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_device_name</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_blob_rsp</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_READ_BLOB_RSP</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l620" href="#l620">620</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l621" href="#l621">621</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_REPORT_MAP</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_blob_rsp</span><span class="w"> </span><span class="o">*</span><span class="n">read_blob_rsp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_blob_rsp</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l622" href="#l622">622</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_report_map</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_blob_rsp</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span></td>
+      <td class="linecount "></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l623" href="#l623">623</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l624" href="#l624">624</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l625" href="#l625">625</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_DEVICE_NAME</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l626" href="#l626">626</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_device_name</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_blob_rsp</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l627" href="#l627">627</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l628" href="#l628">628</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_REPORT_MAP</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l629" href="#l629">629</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_report_map</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="n">read_blob_rsp</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l630" href="#l630">630</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l631" href="#l631">631</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_READ_GROUP_RSP</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l632" href="#l632">632</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l633" href="#l633">633</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_group_rsp</span><span class="w"> </span><span class="o">*</span><span class="n">read_group_rsp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_group_rsp</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l634" href="#l634">634</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="w">                </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l635" href="#l635">635</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l636" href="#l636">636</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l637" href="#l637">637</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_FIND_HID_HDLS</span><span class="p">:</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l638" href="#l638">638</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_find_hid_hdls</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">read_group_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">read_group_rsp</span><span class="o">-&gt;</span><span class="n">len</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_READ_GROUP_RSP</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l639" href="#l639">639</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l640" href="#l640">640</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_group_rsp</span><span class="w"> </span><span class="o">*</span><span class="n">read_group_rsp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_read_group_rsp</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l641" href="#l641">641</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l642" href="#l642">642</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l643" href="#l643">643</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                </span><span class="p">}</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l644" href="#l644">644</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">}</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l645" href="#l645">645</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l646" href="#l646">646</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">}</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l647" href="#l647">647</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_WRITE_RSP</span><span class="p">:</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l648" href="#l648">648</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">{</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l649" href="#l649">649</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l650" href="#l650">650</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l651" href="#l651">651</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_REPORT_CFG</span><span class="p">:</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l652" href="#l652">652</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_continue_report_cfg</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l653" href="#l653">653</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l654" href="#l654">654</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l655" href="#l655">655</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l656" href="#l656">656</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l657" href="#l657">657</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                </span><span class="p">}</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l658" href="#l658">658</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">}</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l659" href="#l659">659</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l660" href="#l660">660</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">}</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l661" href="#l661">661</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_NOTIFY</span><span class="p">:</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l662" href="#l662">662</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">{</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l663" href="#l663">663</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_notify</span><span class="w"> </span><span class="o">*</span><span class="n">notify</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_notify</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l664" href="#l664">664</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l665" href="#l665">665</a></td>
+      <td class="lineno"><a id="l642" href="#l642">642</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">HID_MAX_REPORT</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l666" href="#l666">666</a></td>
+      <td class="lineno"><a id="l643" href="#l643">643</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">notify</span><span class="o">-&gt;</span><span class="n">handle</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">hid_data</span><span class="o">-&gt;</span><span class="n">reports</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">report_hdl</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l667" href="#l667">667</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cp">#ifdef CONFIG_BLUERETRO_ADAPTER_RUMBLE_TEST</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l668" href="#l668">668</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                    </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_xb1_rumble</span><span class="w"> </span><span class="n">rumble</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l669" href="#l669">669</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                        </span><span class="p">.</span><span class="n">enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x03</span><span class="p">,</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l670" href="#l670">670</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                        </span><span class="p">.</span><span class="n">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0xFF</span><span class="p">,</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l671" href="#l671">671</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                        </span><span class="p">.</span><span class="n">cnt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x00</span><span class="p">,</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l672" href="#l672">672</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                    </span><span class="p">};</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l673" href="#l673">673</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                    </span><span class="n">rumble</span><span class="p">.</span><span class="n">mag_r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">hidp_data</span><span class="p">[</span><span class="mi">11</span><span class="p">];</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l674" href="#l674">674</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                    </span><span class="n">rumble</span><span class="p">.</span><span class="n">mag_l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">hidp_data</span><span class="p">[</span><span class="mi">9</span><span class="p">];</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l675" href="#l675">675</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                    </span><span class="n">bt_hid_cmd_xbox_rumble</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rumble</span><span class="p">);</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l676" href="#l676">676</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cp">#else</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l677" href="#l677">677</a></td>
+      <td class="lineno"><a id="l644" href="#l644">644</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="n">bt_host_bridge</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="o">-&gt;</span><span class="n">reports</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">notify</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">notify</span><span class="o">-&gt;</span><span class="n">handle</span><span class="p">));</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_FIND_HID_HDLS</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l678" href="#l678">678</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cp">#endif</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l679" href="#l679">679</a></td>
+      <td class="lineno"><a id="l645" href="#l645">645</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_process_find_hid_hdls</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">read_group_rsp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">read_group_rsp</span><span class="o">-&gt;</span><span class="n">len</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l680" href="#l680">680</a></td>
+      <td class="lineno"><a id="l646" href="#l646">646</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l647" href="#l647">647</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l648" href="#l648">648</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l649" href="#l649">649</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l650" href="#l650">650</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">                </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l681" href="#l681">681</a></td>
+      <td class="lineno"><a id="l651" href="#l651">651</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">            </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l682" href="#l682">682</a></td>
+      <td class="lineno"><a id="l652" href="#l652">652</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l683" href="#l683">683</a></td>
+      <td class="lineno"><a id="l653" href="#l653">653</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">        </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l684" href="#l684">684</a></td>
+      <td class="lineno"><a id="l654" href="#l654">654</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">default</span><span class="o">:</span></td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_WRITE_RSP</span><span class="p">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l655" href="#l655">655</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l656" href="#l656">656</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_HID_INTR_READY</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l657" href="#l657">657</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l658" href="#l658">658</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_HID_REPORT_CFG</span><span class="p">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l659" href="#l659">659</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_att_hid_continue_report_cfg</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l660" href="#l660">660</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l661" href="#l661">661</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">default</span><span class="o">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l662" href="#l662">662</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# %s: Invalid state: %ld rsp: 0x%02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__FUNCTION__</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">hid_state</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_hdr</span><span class="p">.</span><span class="n">code</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l663" href="#l663">663</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l664" href="#l664">664</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l665" href="#l665">665</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l666" href="#l666">666</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l667" href="#l667">667</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l668" href="#l668">668</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_ATT_OP_NOTIFY</span><span class="p">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l669" href="#l669">669</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l670" href="#l670">670</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_notify</span><span class="w"> </span><span class="o">*</span><span class="n">notify</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_att_notify</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">att_data</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l671" href="#l671">671</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l672" href="#l672">672</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">ids</span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">BT_SW2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l673" href="#l673">673</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="n">bt_host_bridge</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">notify</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">notify</span><span class="o">-&gt;</span><span class="n">handle</span><span class="p">));</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l674" href="#l674">674</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l675" href="#l675">675</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">else</span><span class="w"> </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l676" href="#l676">676</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">HID_MAX_REPORT</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l677" href="#l677">677</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">notify</span><span class="o">-&gt;</span><span class="n">handle</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">hid_data</span><span class="o">-&gt;</span><span class="n">reports</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">report_hdl</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l678" href="#l678">678</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="cp">#ifdef CONFIG_BLUERETRO_ADAPTER_RUMBLE_TEST</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l679" href="#l679">679</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                        </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_xb1_rumble</span><span class="w"> </span><span class="n">rumble</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l680" href="#l680">680</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                            </span><span class="p">.</span><span class="n">enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x03</span><span class="p">,</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l681" href="#l681">681</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                            </span><span class="p">.</span><span class="n">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0xFF</span><span class="p">,</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l682" href="#l682">682</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                            </span><span class="p">.</span><span class="n">cnt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x00</span><span class="p">,</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l683" href="#l683">683</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                        </span><span class="p">};</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l684" href="#l684">684</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                        </span><span class="n">rumble</span><span class="p">.</span><span class="n">mag_r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">hidp_data</span><span class="p">[</span><span class="mi">11</span><span class="p">];</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l685" href="#l685">685</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="n">bt_att_cfg_hdlr</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="p">,</span><span class="w"> </span><span class="n">len</span><span class="p">);</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                        </span><span class="n">rumble</span><span class="p">.</span><span class="n">mag_l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="o">-&gt;</span><span class="n">hidp_data</span><span class="p">[</span><span class="mi">9</span><span class="p">];</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l686" href="#l686">686</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                        </span><span class="n">bt_hid_cmd_xbox_rumble</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rumble</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l687" href="#l687">687</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="p">}</span></td>
+      <td class="src "><span class="cp">#else</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l688" href="#l688">688</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="p">}</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_host_bridge</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">hid_data</span><span class="o">-&gt;</span><span class="n">reports</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">notify</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">att_len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">notify</span><span class="o">-&gt;</span><span class="n">handle</span><span class="p">));</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l689" href="#l689">689</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="cp">#endif</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l690" href="#l690">690</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l691" href="#l691">691</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                    </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l692" href="#l692">692</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l693" href="#l693">693</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l694" href="#l694">694</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l695" href="#l695">695</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l696" href="#l696">696</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">default</span><span class="o">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l697" href="#l697">697</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="n">bt_att_cfg_hdlr</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">bt_hci_acl_pkt</span><span class="p">,</span><span class="w"> </span><span class="n">len</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l698" href="#l698">698</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l699" href="#l699">699</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">    </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l700" href="#l700">700</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l701" href="#l701">701</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
