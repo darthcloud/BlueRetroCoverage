@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2025-06-18 22:34:34</td>
+      <td>2025-06-25 03:10:31</td>
     </tr>
   </table>
 </div>
@@ -41,7 +41,7 @@
     <tr>
       <th scope="row">Lines:</th>
       <td>0</td>
-      <td>70</td>
+      <td>94</td>
       <td class="coverage-none">0.0%</td>
     </tr>
     <tr>
@@ -53,7 +53,7 @@
     <tr>
       <th scope="row">Branches:</th>
       <td>0</td>
-      <td>29</td>
+      <td>36</td>
       <td class="coverage-none">0.0%</td>
     </tr>
   </table>
@@ -179,7 +179,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;bluetooth/hidp/hidp.h&quot;</span></td>
+      <td class="src "><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;bluetooth/hidp/sw2.h&quot;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l14" href="#l14">14</a></td>
@@ -1698,42 +1698,42 @@
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">pid</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="src uncoveredLine"><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_sw2_out</span><span class="w"> </span><span class="o">*</span><span class="n">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_sw2_out</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">output</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l231" href="#l231">231</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mh">0x2066</span><span class="p">:</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l232" href="#l232">232</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mh">0x2067</span><span class="p">:</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">pid</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l233" href="#l233">233</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mh">0x2069</span><span class="p">:</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mh">0x2066</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l234" href="#l234">234</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src "><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mh">0x2067</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l235" href="#l235">235</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mh">0x2073</span><span class="p">:</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mh">0x2069</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l236" href="#l236">236</a></td>
@@ -1754,115 +1754,318 @@
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fb_data</span><span class="o">-&gt;</span><span class="n">state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fb_data</span><span class="o">-&gt;</span><span class="n">hf_pwr</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">fb_data</span><span class="o">-&gt;</span><span class="n">lf_pwr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l239" href="#l239">239</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">output</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x01</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">r_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">hf_freq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x1e1</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l240" href="#l240">240</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                    </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">r_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">hf_amp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="p">)((</span><span class="kt">float</span><span class="p">)</span><span class="n">fb_data</span><span class="o">-&gt;</span><span class="n">hf_pwr</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2.68</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l241" href="#l241">241</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                    </span><span class="k">else</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">r_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">lf_freq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x180</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l242" href="#l242">242</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">output</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x00</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">r_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">lf_amp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">uint16_t</span><span class="p">)((</span><span class="kt">float</span><span class="p">)</span><span class="n">fb_data</span><span class="o">-&gt;</span><span class="n">hf_pwr</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">0.3156</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l243" href="#l243">243</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">                    </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">r_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l244" href="#l244">244</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">                    </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l245" href="#l245">245</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">FB_TYPE_PLAYER_LED</span><span class="p">:</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">l_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">hf_freq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0xe1</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l246" href="#l246">246</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">output</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_hid_led_dev_id_map</span><span class="p">[</span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">pids</span><span class="o">-&gt;</span><span class="n">out_idx</span><span class="p">];</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">l_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">hf_amp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="p">)((</span><span class="kt">float</span><span class="p">)</span><span class="n">fb_data</span><span class="o">-&gt;</span><span class="n">lf_pwr</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2.68</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l247" href="#l247">247</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">l_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">lf_freq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x100</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l248" href="#l248">248</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">l_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">lf_amp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">uint16_t</span><span class="p">)((</span><span class="kt">float</span><span class="p">)</span><span class="n">fb_data</span><span class="o">-&gt;</span><span class="n">lf_pwr</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">0.3156</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l249" href="#l249">249</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">l_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l250" href="#l250">250</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">default</span><span class="o">:</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                    </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l251" href="#l251">251</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# Unknown pid : %04X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">pid</span><span class="p">);</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                    </span><span class="k">else</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l252" href="#l252">252</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="p">}</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">l_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x1e100000</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l253" href="#l253">253</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="p">}</span></td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">l_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">hf_amp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x00</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l254" href="#l254">254</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">r_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x1e100000</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l255" href="#l255">255</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">r_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">hf_amp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x00</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l256" href="#l256">256</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                    </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l257" href="#l257">257</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%08lX %02X %08lX %02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">l_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">val</span><span class="p">,</span><span class="w"> </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">l_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">hf_amp</span><span class="p">,</span><span class="w"> </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">r_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">val</span><span class="p">,</span><span class="w"> </span><span class="n">out</span><span class="o">-&gt;</span><span class="n">r_lra</span><span class="p">.</span><span class="n">ops</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">hf_amp</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l258" href="#l258">258</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l259" href="#l259">259</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">FB_TYPE_PLAYER_LED</span><span class="p">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l260" href="#l260">260</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">output</span><span class="p">[</span><span class="mi">41</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_hid_led_dev_id_map</span><span class="p">[</span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">pids</span><span class="o">-&gt;</span><span class="n">out_idx</span><span class="p">];</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l261" href="#l261">261</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l262" href="#l262">262</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l263" href="#l263">263</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l264" href="#l264">264</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mh">0x2073</span><span class="p">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l265" href="#l265">265</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">fb_data</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l266" href="#l266">266</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">FB_TYPE_RUMBLE</span><span class="p">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l267" href="#l267">267</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fb_data</span><span class="o">-&gt;</span><span class="n">state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l268" href="#l268">268</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">output</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x01</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l269" href="#l269">269</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                    </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l270" href="#l270">270</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                    </span><span class="k">else</span><span class="w"> </span><span class="p">{</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l271" href="#l271">271</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                        </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">output</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x00</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l272" href="#l272">272</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                    </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l273" href="#l273">273</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">                    </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l274" href="#l274">274</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="no">FB_TYPE_PLAYER_LED</span><span class="p">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l275" href="#l275">275</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">output</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_hid_led_dev_id_map</span><span class="p">[</span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">pids</span><span class="o">-&gt;</span><span class="n">out_idx</span><span class="p">];</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l276" href="#l276">276</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">                    </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l277" href="#l277">277</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l278" href="#l278">278</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l279" href="#l279">279</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">default</span><span class="o">:</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l280" href="#l280">280</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;# Unknown pid : %04X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">pid</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l281" href="#l281">281</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">    </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l282" href="#l282">282</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l283" href="#l283">283</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
