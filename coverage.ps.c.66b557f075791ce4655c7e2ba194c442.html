@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2025-06-26 00:33:22</td>
+      <td>2025-07-13 21:38:34</td>
     </tr>
   </table>
 </div>
@@ -40,9 +40,9 @@
     </tr>
     <tr>
       <th scope="row">Lines:</th>
-      <td>107</td>
-      <td>120</td>
-      <td class="coverage-medium">89.2%</td>
+      <td>108</td>
+      <td>121</td>
+      <td class="coverage-medium">89.3%</td>
     </tr>
     <tr>
       <th scope="row">Functions:</th>
@@ -2237,10 +2237,17 @@
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">3</td>
-      <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">ps_fb_from_generic</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">generic_fb</span><span class="w"> </span><span class="o">*</span><span class="n">fb_data</span><span class="p">,</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_data</span><span class="w"> </span><span class="o">*</span><span class="n">bt_data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="src coveredLine"><span class="kt">bool</span><span class="w"> </span><span class="nf">ps_fb_from_generic</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">generic_fb</span><span class="w"> </span><span class="o">*</span><span class="n">fb_data</span><span class="p">,</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_data</span><span class="w"> </span><span class="o">*</span><span class="n">bt_data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l286" href="#l286">286</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">3</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l287" href="#l287">287</a></td>
       <td class="linebranch">
         <details class="linebranchDetails">
           <summary class="linebranchSummary">2/2</summary>
@@ -2254,63 +2261,70 @@
       <td class="src coveredLine"><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">bt_data</span><span class="o">-&gt;</span><span class="n">base</span><span class="p">.</span><span class="n">pids</span><span class="o">-&gt;</span><span class="n">subtype</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l287" href="#l287">287</a></td>
+      <td class="lineno"><a id="l288" href="#l288">288</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">1</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">BT_PS5_DS</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l288" href="#l288">288</a></td>
+      <td class="lineno"><a id="l289" href="#l289">289</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">1</td>
       <td class="src coveredLine"><span class="w">            </span><span class="n">ps5_fb_from_generic</span><span class="p">(</span><span class="n">fb_data</span><span class="p">,</span><span class="w"> </span><span class="n">bt_data</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l289" href="#l289">289</a></td>
+      <td class="lineno"><a id="l290" href="#l290">290</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">1</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l290" href="#l290">290</a></td>
+      <td class="lineno"><a id="l291" href="#l291">291</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">2</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">default</span><span class="o">:</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l291" href="#l291">291</a></td>
+      <td class="lineno"><a id="l292" href="#l292">292</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">2</td>
       <td class="src coveredLine"><span class="w">            </span><span class="n">ps4_fb_from_generic</span><span class="p">(</span><span class="n">fb_data</span><span class="p">,</span><span class="w"> </span><span class="n">bt_data</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l292" href="#l292">292</a></td>
+      <td class="lineno"><a id="l293" href="#l293">293</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">2</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l293" href="#l293">293</a></td>
+      <td class="lineno"><a id="l294" href="#l294">294</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">    </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l294" href="#l294">294</a></td>
+      <td class="lineno"><a id="l295" href="#l295">295</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">3</td>
-      <td class="src coveredLine"><span class="p">}</span></td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ret</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l295" href="#l295">295</a></td>
+      <td class="lineno"><a id="l296" href="#l296">296</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l297" href="#l297">297</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
