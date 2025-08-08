@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2025-08-05 20:59:05</td>
+      <td>2025-08-08 19:51:08</td>
     </tr>
   </table>
 </div>
@@ -40,9 +40,9 @@
     </tr>
     <tr>
       <th scope="row">Lines:</th>
+      <td>17</td>
       <td>18</td>
-      <td>18</td>
-      <td class="coverage-high">100.0%</td>
+      <td class="coverage-high">94.4%</td>
     </tr>
     <tr>
       <th scope="row">Functions:</th>
@@ -52,9 +52,9 @@
     </tr>
     <tr>
       <th scope="row">Branches:</th>
-      <td>6</td>
+      <td>5</td>
       <td>8</td>
-      <td class="coverage-medium">75.0%</td>
+      <td class="coverage-low">62.5%</td>
     </tr>
   </table>
 </div>
@@ -73,7 +73,7 @@
       <th>Condition coverage</th>
       <th>Block coverage</th>
     </tr>
-    <tr><td><a href="#l10">bt_hid_cmd_generic_rumble (line 10)</a></td><td>called 7 times</td><td>100.0%</td><td>83.3%</td><td>-%</td><td>100.0%</td></tr>
+    <tr><td><a href="#l10">bt_hid_cmd_generic_rumble (line 10)</a></td><td>called 6 times</td><td>87.5%</td><td>66.7%</td><td>-%</td><td>87.5%</td></tr>
     <tr><td><a href="#l28">bt_hid_generic_hdlr (line 28)</a></td><td>called 178 times</td><td>100.0%</td><td>50.0%</td><td>-%</td><td>100.0%</td></tr>
     <tr><td><a href="#l24">bt_hid_generic_init (line 24)</a></td><td>called 23 times</td><td>100.0%</td><td>-%</td><td>-%</td><td>100.0%</td></tr>
   </table>
@@ -156,14 +156,14 @@
       <td class="lineno"><a id="l10" href="#l10">10</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">7</td>
+      <td class="linecount coveredLine">6</td>
       <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">bt_hid_cmd_generic_rumble</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_dev</span><span class="w"> </span><span class="o">*</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">report</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l11" href="#l11">11</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">7</td>
+      <td class="linecount coveredLine">6</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_generic_rumble</span><span class="w"> </span><span class="o">*</span><span class="n">rumble_report</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_generic_rumble</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">report</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -179,36 +179,36 @@
         <details class="linebranchDetails">
           <summary class="linebranchSummary">3/4</summary>
           <div class="linebranchContents">
-            <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 2 times.</div>
+            <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 1 times.</div>
             <div class="takenBranch">&check; Branch 1 (2&rightarrow;9) taken 5 times.</div>
-            <div class="takenBranch">&check; Branch 2 (3&rightarrow;4) taken 2 times.</div>
+            <div class="takenBranch">&check; Branch 2 (3&rightarrow;4) taken 1 times.</div>
             <div class="notTakenBranch">&cross; Branch 3 (3&rightarrow;9) not taken.</div>
           </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">7</td>
+      <td class="linecount partialCoveredLine">6</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">rumble_report</span><span class="o">-&gt;</span><span class="n">report_id</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">rumble_report</span><span class="o">-&gt;</span><span class="n">report_size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l14" href="#l14">14</a></td>
       <td class="linebranch">
         <details class="linebranchDetails">
-          <summary class="linebranchSummary">2/2</summary>
+          <summary class="linebranchSummary">1/2</summary>
           <div class="linebranchContents">
-            <div class="takenBranch">&check; Branch 0 (5&rightarrow;6) taken 1 times.</div>
+            <div class="notTakenBranch">&cross; Branch 0 (5&rightarrow;6) not taken.</div>
             <div class="takenBranch">&check; Branch 1 (5&rightarrow;7) taken 1 times.</div>
           </div>
         </details>
       </td>
-      <td class="linecount coveredLine">2</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_IS_BLE</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount partialCoveredLine">1</td>
+      <td class="src partialCoveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">atomic_test_bit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">device</span><span class="o">-&gt;</span><span class="n">flags</span><span class="p">,</span><span class="w"> </span><span class="n">BT_DEV_IS_BLE</span><span class="p">))</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l15" href="#l15">15</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1</td>
-      <td class="src coveredLine"><span class="w">            </span><span class="n">bt_att_write_hid_report</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">rumble_report</span><span class="o">-&gt;</span><span class="n">report_id</span><span class="p">,</span><span class="w"> </span><span class="n">rumble_report</span><span class="o">-&gt;</span><span class="n">state</span><span class="p">,</span><span class="w"> </span><span class="n">rumble_report</span><span class="o">-&gt;</span><span class="n">report_size</span><span class="p">);</span></td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="n">bt_att_write_hid_report</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">rumble_report</span><span class="o">-&gt;</span><span class="n">report_id</span><span class="p">,</span><span class="w"> </span><span class="n">rumble_report</span><span class="o">-&gt;</span><span class="n">state</span><span class="p">,</span><span class="w"> </span><span class="n">rumble_report</span><span class="o">-&gt;</span><span class="n">report_size</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l16" href="#l16">16</a></td>
@@ -256,7 +256,7 @@
       <td class="lineno"><a id="l22" href="#l22">22</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">7</td>
+      <td class="linecount coveredLine">6</td>
       <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
