@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2025-08-08 19:51:08</td>
+      <td>2025-08-08 20:02:08</td>
     </tr>
   </table>
 </div>
@@ -41,8 +41,8 @@
     <tr>
       <th scope="row">Lines:</th>
       <td>158</td>
-      <td>223</td>
-      <td class="coverage-low">70.9%</td>
+      <td>219</td>
+      <td class="coverage-low">72.1%</td>
     </tr>
     <tr>
       <th scope="row">Functions:</th>
@@ -53,8 +53,8 @@
     <tr>
       <th scope="row">Branches:</th>
       <td>37</td>
-      <td>56</td>
-      <td class="coverage-low">66.1%</td>
+      <td>55</td>
+      <td class="coverage-low">67.3%</td>
     </tr>
   </table>
 </div>
@@ -74,7 +74,7 @@
       <th>Block coverage</th>
     </tr>
     <tr><td><a href="#l85">bt_hid_cmd_sw_set_conf (line 85)</a></td><td>called 113 times</td><td>100.0%</td><td>100.0%</td><td>-%</td><td>100.0%</td></tr>
-    <tr><td><a href="#l113">bt_hid_sw_exec_next_state (line 113)</a></td><td>called 72 times</td><td>48.0%</td><td>40.0%</td><td>-%</td><td>50.0%</td></tr>
+    <tr><td><a href="#l113">bt_hid_sw_exec_next_state (line 113)</a></td><td>called 72 times</td><td>57.1%</td><td>50.0%</td><td>-%</td><td>60.0%</td></tr>
     <tr><td><a href="#l104">bt_hid_sw_get_calib (line 104)</a></td><td>called 42 times</td><td>100.0%</td><td>75.0%</td><td>-%</td><td>100.0%</td></tr>
     <tr><td><a href="#l261">bt_hid_sw_hdlr (line 261)</a></td><td>called 784 times</td><td>62.9%</td><td>70.7%</td><td>-%</td><td>61.5%</td></tr>
     <tr><td><a href="#l235">bt_hid_sw_init (line 235)</a></td><td>called 42 times</td><td>100.0%</td><td>-%</td><td>-%</td><td>100.0%</td></tr>
@@ -204,7 +204,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cp">#define SW_SET_NATIVE_EN</span></td>
+      <td class="src "><span class="c1">//#define SW_SET_NATIVE_EN</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l17" href="#l17">17</a></td>
@@ -905,13 +905,12 @@
       <td class="lineno"><a id="l114" href="#l114">114</a></td>
       <td class="linebranch">
         <details class="linebranchDetails">
-          <summary class="linebranchSummary">2/5</summary>
+          <summary class="linebranchSummary">2/4</summary>
           <div class="linebranchContents">
             <div class="takenBranch">&check; Branch 0 (2&rightarrow;3) taken 48 times.</div>
             <div class="takenBranch">&check; Branch 1 (2&rightarrow;5) taken 24 times.</div>
             <div class="notTakenBranch">&cross; Branch 2 (2&rightarrow;7) not taken.</div>
             <div class="notTakenBranch">&cross; Branch 3 (2&rightarrow;9) not taken.</div>
-            <div class="notTakenBranch">&cross; Branch 4 (2&rightarrow;11) not taken.</div>
           </div>
         </details>
       </td>
@@ -1146,8 +1145,8 @@
       <td class="lineno"><a id="l147" href="#l147">147</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">SW_INIT_STATE_SET_NATIVE</span><span class="p">:</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">SW_INIT_STATE_SET_NATIVE</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l148" href="#l148">148</a></td>
@@ -1160,8 +1159,8 @@
       <td class="lineno"><a id="l149" href="#l149">149</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_sw_conf</span><span class="w"> </span><span class="n">sw_conf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">struct</span><span class="w"> </span><span class="nc">bt_hidp_sw_conf</span><span class="w"> </span><span class="n">sw_conf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l150" href="#l150">150</a></td>
@@ -1188,15 +1187,15 @@
       <td class="lineno"><a id="l153" href="#l153">153</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="n">bt_hid_cmd_sw_set_conf</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">sw_conf</span><span class="p">);</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="n">bt_hid_cmd_sw_set_conf</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">sw_conf</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l154" href="#l154">154</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l155" href="#l155">155</a></td>
